@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+<body>
+<h1><b>Historical Arms</b></h1>
+<h2>Catalog</h2>
+    <form action="customerBackend.php" method="post" onsubmit="return check();" >
+    	<h3>Zweihander</h3>
+    	<img src="zweihander.jpeg">
+		<p>Price: $500 <br>
+			Quantity: <input type="text" id="q1" name="q1" value="0"><br>
+		</p>
+		
+		<h3>Guisarme</h3>
+    	<img src="guisarme.jpeg">
+		<p>Price: $250 <br>
+			Quantity: <input type="text" id="q2" name="q2" value="0"><br>
+		</p>
+		
+		<h3>Igorot Headhunter Axe</h3>
+    	<img src="igorotAxe.jpeg">
+		<p>Price: $150 <br>
+			Quantity: <input type="text" id="q3" name="q3" value="0"><br>
+		</p>
+		<h2> Order Information</h2>
+		<h3>Account</h3>
+		<p>email: <input type="text" id="email" name="email"><br>
+			Password: <input type="password" id="pass" name="pass"><br>
+		</p>
+		<h3>Shipping:</h3>
+		<p>
+			<input type="radio" name="ship" value="7day" checked>Free 7-Day<br>
+			<input type="radio" name="ship" value="3day">$5 3-Day<br>
+			<input type="radio" name="ship" value="night">$50 Overnight<br>
+		</p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html> 
